@@ -1,7 +1,7 @@
 var MAPBOX_TOKEN = 'pk.eyJ1IjoiZmVkZXJpY290YWxsaXN2aGIiLCJhIjoiY2s5anp0d3h5MXBwaTNtbndnZjJiMHQyeiJ9.EkcnAumdNONuvCxlASioDw'
 var MAPBOX_STYLE = 'mapbox://styles/federicotallisvhb/cka1nsai41j921imgfrqg191b'
 var SIDEWALKS_TILESET = 'mapbox://federicotallisvhb.a3sixxsl'
-var SIDEWALKS_LAYER = 'Boston_sidewalk_width_JSON.geojson'
+var SIDEWALKS_LAYER = 'mapbox://federicotallisvhb.a3sixxsl'
 var UNITS = 'ft' // change to 'm' for meters
 var PRECISION = 0.1 // the number of decimal places
 var GROUPS = [
