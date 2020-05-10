@@ -1,6 +1,6 @@
-var MAPBOX_TOKEN = 'pk.eyJ1IjoiZGNoYXJ2ZXkiLCJhIjoiY2s5N3Zjc3ZxMGYwazNlbm9ubzA1d3Q1dCJ9.szxUl4AKCdUNLlmvham6og'
-var MAPBOX_STYLE = 'mapbox://styles/dcharvey/ck90r78ib0hnp1jnz9bwleg7h'
-var SIDEWALKS_TILESET = 'mapbox://dcharvey.1typxzdb'
+var MAPBOX_TOKEN = 'pk.eyJ1IjoiZmVkZXJpY290YWxsaXN2aGIiLCJhIjoiY2s5anp0d3h5MXBwaTNtbndnZjJiMHQyeiJ9.EkcnAumdNONuvCxlASioDw'
+var MAPBOX_STYLE = 'mapbox://styles/federicotallisvhb/ck9zyok013tjk1imte3akocfp'
+var SIDEWALKS_TILESET = 'federicotallisvhb.a3sixxsl'
 var SIDEWALKS_LAYER = 'sidewalkwidths_nyc-87ugfr'
 var UNITS = 'ft' // change to 'm' for meters
 var PRECISION = 0.1 // the number of decimal places
