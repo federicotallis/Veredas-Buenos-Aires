@@ -26,10 +26,10 @@ var map = new mapboxgl.Map({
   zoom: 14,
   maxZoom: 19,
   minZoom: 14,
- //maxBounds: [
-  // [-74.33, 40.41], // Southwest coordinates
-   // [-73.63, 40.98] // Northeast coordinates
-  //],
+  maxBounds: [
+    [-70.99055, 42.40243], // Southwest coordinates
+    [-71.11233, 42.20448] // Northeast coordinates
+  ],
   hash: true
 });
 
