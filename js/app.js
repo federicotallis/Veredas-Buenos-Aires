@@ -22,10 +22,10 @@ mapboxgl.accessToken = MAPBOX_TOKEN;
 var map = new mapboxgl.Map({
   container: 'map',
   style: MAPBOX_STYLE,
-  center: [-71.05967,42.36415],
-  zoom: 13,
-  maxZoom: 22,
-  minZoom: 13,
+  center: [-71.04517,42.35761],
+  zoom: 14,
+  maxZoom: 19,
+  minZoom: 14,
  //maxBounds: [
   // [-74.33, 40.41], // Southwest coordinates
    // [-73.63, 40.98] // Northeast coordinates
