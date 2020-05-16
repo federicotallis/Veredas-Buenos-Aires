@@ -223,7 +223,7 @@ map.on('load', function() {
     var description =
       '<div class="name">Sidewalk Width:</div>' +
       '<div class="width">' + (Math.round(lineWidth * 10) / 10) + ' ' + UNITS + '</div>' +
-      '<div class="message">Social distancing is ' + GROUPS[groupIndex].rating + ' on this path</div>'
+      '<div class="message">Distanciamiento social es' + GROUPS[groupIndex].rating + ' en esta vereda</div>'
 
     popup.setLngLat(coordinates)
     popup.setHTML(description)
