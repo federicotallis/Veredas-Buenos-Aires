@@ -35,6 +35,8 @@ var map = new mapboxgl.Map({
 
 map.addControl(new mapboxgl.NavigationControl());
 
+map.addControl(new MapboxGeocoder({accessToken: MAPBOX_TOKEN,mapboxgl: mapboxgl})
+
 map.on('load', function() {
   // Insert the layer beneath any symbol layer.
   var layers = map.getStyle().layers;
@@ -260,5 +262,7 @@ map.on('load', function() {
     map.getCanvas().style.cursor = '';
     popup.remove();
   });
+  
+
 
 });
