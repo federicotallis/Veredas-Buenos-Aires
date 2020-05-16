@@ -22,14 +22,14 @@ mapboxgl.accessToken = MAPBOX_TOKEN;
 var map = new mapboxgl.Map({
   container: 'map',
   style: MAPBOX_STYLE,
-  center: [-58.4,-34.6],
-  zoom: 15,
+  center: [-58.4, -34.6],
+  zoom: 13,
   maxZoom: 19,
   minZoom: 13,
- // maxBounds: [
-   // [-70.99, 42.40], // Southwest coordinates
-   // [-71.11, 42.20] // Northeast coordinates
- // ],
+  maxBounds: [
+    [-58.5,-34.7], // Southwest coordinates
+    [-58.3,-34.5] // Northeast coordinates
+  ],
   hash: true
 });
 
@@ -38,6 +38,26 @@ map.addControl(new mapboxgl.NavigationControl());
 map.on('load', function() {
   // Insert the layer beneath any symbol layer.
   var layers = map.getStyle().layers;
+
+  var labelLayerId;
+  for (var i = 0; i < layers.length; i++) {
+    if (layers[i].type === 'symbol') {
+      labelLayerId = layers[i].id;
+      break;
+    }
+  }
+
+  map.addSource('sidewalks', {
+     type: 'vector',
+     url: SIDEWALKS_TILESET
+  });
+
+  var lineColor = ["step", ["get", 'width']]
+
+  for (var i=0; i<GROUPS.length; i++) {
+    if (i==0) lineColor.push(GROUPS[0].color)
+    else lineColor.push(GROUPS[i].value, GROUPS[i].color)
+  }
 
   var labelLayerId;
   for (var i = 0; i < layers.length; i++) {
