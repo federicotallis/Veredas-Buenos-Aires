@@ -7,37 +7,37 @@ var PRECISION = 0.1 // the number of decimal places
 var GROUPS = [
   {
     "value": 0,
-    "rating": "imposible",
+    "rating": "Imposible",
     "color": "#FF0049"
   },
   {
     "value": 2,
-    "rating": "muy dificil",
+    "rating": "Muy Dificil",
     "color": "#FF461E"
   },
   {
     "value": 3,
-    "rating": "dificil",
+    "rating": "Dificil",
     "color": "#FF9300"
   },
   {
     "value": 4,
-    "rating": "mas o menos dificil",
+    "rating": "Algo Dificil",
     "color": "#DAD130"
   },
   {
     "value": 5,
-    "rating": "algo facil",
+    "rating": "Algo facil",
     "color": "#00ff5a"
   },
   {
     "value": 6,
-    "rating": "facil",
+    "rating": "Facil",
     "color": "#00FFC4"
   },
   {
     "value": 7,
-    "rating": "muy facil",
+    "rating": "Muy Facil",
     "color": "#00D2FF"
   },
 ]
