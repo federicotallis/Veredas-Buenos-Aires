@@ -33,9 +33,9 @@ var map = new mapboxgl.Map({
   hash: true
 });
 
-map.addControl(new MapboxGeocoder({accessToken: MAPBOX_TOKEN,
-                                   bbox: [-58.5,-34.7,-58.3,-34.5],
-                                   mapboxgl: mapboxgl}));
+//map.addControl(new MapboxGeocoder({accessToken: MAPBOX_TOKEN,
+  //                                 bbox: [-58.5,-34.7,-58.3,-34.5],
+    //                               mapboxgl: mapboxgl}));
 
 map.addControl(new mapboxgl.NavigationControl());
 
