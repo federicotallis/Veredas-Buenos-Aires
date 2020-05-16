@@ -2,7 +2,7 @@ var MAPBOX_TOKEN = 'pk.eyJ1IjoiZmVkZXJpY290YWxsaXN2aGIiLCJhIjoiY2s5anp0d3h5MXBwa
 var MAPBOX_STYLE = 'mapbox://styles/federicotallisvhb/ck9zyok013tjk1imte3akocfp'
 var SIDEWALKS_TILESET = 'mapbox://federicotallisvhb.2anopi8n'
 var SIDEWALKS_LAYER = 'Buenos_Aires_Sidewalk_Widths-97vmxa'
-var UNITS = 'ft' // change to 'm' for meters
+var UNITS = 'm' // change to 'm' for meters
 var PRECISION = 0.1 // the number of decimal places
 var GROUPS = [
   {
