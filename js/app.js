@@ -221,7 +221,7 @@ map.on('load', function() {
     lineColor = GROUPS[groupIndex].color
 
     var description =
-      '<div class="name">Sidewalk Width:</div>' +
+      '<div class="name">Ancho de Vereda:</div>' +
       '<div class="width">' + (Math.round(lineWidth * 10) / 10) + ' ' + UNITS + '</div>' +
       '<div class="message">Distanciamiento social es ' + GROUPS[groupIndex].rating + ' en esta vereda</div>'
 
