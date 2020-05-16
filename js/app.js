@@ -22,14 +22,14 @@ mapboxgl.accessToken = MAPBOX_TOKEN;
 var map = new mapboxgl.Map({
   container: 'map',
   style: MAPBOX_STYLE,
-  center: [-58.4, -34.6],
-  zoom: 13,
+  center: [-58.4,-34.6],
+  zoom: 15,
   maxZoom: 19,
   minZoom: 13,
-  maxBounds: [
-    [-58.5,-34.7], // Southwest coordinates
-    [-58.3,-34.5] // Northeast coordinates
-  ],
+ // maxBounds: [
+   // [-70.99, 42.40], // Southwest coordinates
+   // [-71.11, 42.20] // Northeast coordinates
+ // ],
   hash: true
 });
 
@@ -38,26 +38,6 @@ map.addControl(new mapboxgl.NavigationControl());
 map.on('load', function() {
   // Insert the layer beneath any symbol layer.
   var layers = map.getStyle().layers;
-
-  var labelLayerId;
-  for (var i = 0; i < layers.length; i++) {
-    if (layers[i].type === 'symbol') {
-      labelLayerId = layers[i].id;
-      break;
-    }
-  }
-
-  map.addSource('sidewalks', {
-     type: 'vector',
-     url: SIDEWALKS_TILESET
-  });
-
-  var lineColor = ["step", ["get", 'width']]
-
-  for (var i=0; i<GROUPS.length; i++) {
-    if (i==0) lineColor.push(GROUPS[0].color)
-    else lineColor.push(GROUPS[i].value, GROUPS[i].color)
-  }
 
   var labelLayerId;
   for (var i = 0; i < layers.length; i++) {
@@ -243,7 +223,7 @@ map.on('load', function() {
     var description =
       '<div class="name">Sidewalk Width:</div>' +
       '<div class="width">' + (Math.round(lineWidth * 10) / 10) + ' ' + UNITS + '</div>' +
-      '<div class="message">Distanciamiento social es ' + GROUPS[groupIndex].rating + ' en esta vereda</div>'
+      '<div class="message">Social distancing is ' + GROUPS[groupIndex].rating + ' on this path</div>'
 
     popup.setLngLat(coordinates)
     popup.setHTML(description)
@@ -280,7 +260,5 @@ map.on('load', function() {
     map.getCanvas().style.cursor = '';
     popup.remove();
   });
-  
-
 
 });
